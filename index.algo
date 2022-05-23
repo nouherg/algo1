@@ -1,0 +1,17 @@
+ALGORITHM sentence ()
+VAR
+    l,nbv,nbrw:= INTEGER
+    ch:=CHAR
+BEGIN
+read(ch)
+ WHILE (ch<>".") DO
+     l=l+1
+     IF (ch=" ") THEN
+        nbrw=nbrw+1
+     END_IF
+     IF (ch="a" or ch="e" or ch="y" or ch="u" or ch="i" or ch="o") THEN
+         nbv=nbv+1
+     END_IF
+ END_WHILE
+ write (nbv,nbrw,l)
+END
